@@ -14,7 +14,11 @@ body {
   margin-left: 15%;
   margin-right: 15%;
   border: 1px solid gray;
+}
+
+.caption {
   text-align: center;
+  font-weight: normal;
 }
 
 img {
@@ -23,11 +27,22 @@ img {
 }
 
 a {
-  color: #007acc;
+  color: darkblue;
+  font-weight: bold;
+  text-decoration: underline;
+  text-decoration-color: darkblue;
+  text-decoration-style: solid;
+  transition: all 1s ease;
 }
 
-h1 {
-  text-align: center;
+h1>a {
+  font-weight: normal;
+  text-align: left;
+}
+
+h3 {
+  font-family: "Futura", sans-serif;
+  font-weight: 600;
 }
 
 ul {
@@ -38,10 +53,11 @@ ul {
   color: rgb(69, 69, 69);
   text-decoration: none;
   font-size: 40px;
+  transition: all 0.5s ease;
 }
 
 #name-header>a:hover {
-  color: #007acc;
+  color: darkblue;
 }
 
 .flex-container {
@@ -49,24 +65,33 @@ ul {
 }
 
 #navigation-bar.flex-container {
-  justify-content: center;
+  justify-content: left;
   flex-direction: row;
 }
 
 #navigation-bar>div {
-  padding: 18px;
+  padding: 7px 20px;
 }
 
 #navigation-bar>div>a {
-  font-size: 24px;
+  font-family: "Futura", sans-serif;
+  font-size: 18px;
+  font-weight: normal;
   text-decoration: none;
   color: rgb(69, 69, 69);
+  transition: all 0.5s ease;
+}
+
+#navigation-bar>div>a:hover {
+  color: darkblue;
+}
+
+#navigation-bar>div>a.current {
+  font-weight: bold;
 }
 
 .divider {
-  color: rgb(221, 221, 221);
-  border-width: 1px;
-  border-style: solid;
+  border: 1px solid black;
 }
 
 hr {
@@ -74,16 +99,8 @@ hr {
   size: 20px;
 }
 
-#navigation-bar>div>a:hover {
-  /* text-decoration: underline; */
-  color: #007acc;
-}
-
-#navigation-bar>div>a.current {
-  font-weight: bold;
-}
-
 .content {
+  /* border: 1px solid Tomato; */
   width: 60%;
   padding: 1%;
   margin: 0px auto;
